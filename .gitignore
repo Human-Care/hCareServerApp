@@ -1,6 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
-spring-cloud-eureka-client/spring-cloud-eureka-client.iml
-spring-cloud-eureka-feign-client/spring-cloud-eureka-feign-client.iml
-spring-cloud-eureka-server/spring-cloud-eureka-server.iml
-spring-cloud-eureka.iml
+*.iml
+target/
+.mvn
+mvnw*
