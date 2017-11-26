@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: accommodation
-  cloud:
-      config:
-        uri: http://config:8888
-        fail-fast: true
