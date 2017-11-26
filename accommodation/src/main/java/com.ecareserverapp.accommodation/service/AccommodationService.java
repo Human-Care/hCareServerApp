@@ -20,7 +20,7 @@ public class AccommodationService {
         return accommodationRepository.findOne(id);
     }
 
-    public List<Accommodation> getAllAccommodations() {
+    public Iterable<Accommodation> getAllAccommodations() {
         return accommodationRepository.findAll();
     }
 

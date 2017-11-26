@@ -28,7 +28,7 @@ public class AccommodationEndpoint {
     }
 
     @GetMapping("/")
-    public List<Accommodation> getAllAccommodations() {
+    public Iterable<Accommodation> getAllAccommodations() {
         return accommodationService.getAllAccommodations();
     }
 
