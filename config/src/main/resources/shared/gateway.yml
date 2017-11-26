@@ -7,13 +7,6 @@ zuul:
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
-  routes:
-    accommodation-service:
-            path: /accommodations/**
-            serviceId: accommodation
-            sensitiveHeaders: # here we should list all sensitive headers, if we want to use it
-            stripPrefix: false
-
 
 server:
   port: 4000
