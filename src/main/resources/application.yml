@@ -2,10 +2,10 @@ spring:
   application:
     name: himancare-be
   datasource:
-    url: jdbc:mysql://85.143.210.231:3306/account_service_db
+    url: jdbc:mysql://85.143.210.231:3306/dbase
     username: sherlock
     password: sherlock
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update

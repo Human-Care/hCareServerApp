@@ -4,3 +4,5 @@
 target/
 .mvn
 mvnw*
+.gradle
+out

@@ -13,16 +13,16 @@ import java.util.Optional;
 @Configuration
 public class AccountCommandLineRunner implements CommandLineRunner {
 
-    private final AccountRepository accountRepository;
-
-    @Autowired
-    public AccountCommandLineRunner(AccountRepository accountRepository) {
-        this.accountRepository = accountRepository;
-    }
+//    private final AccountRepository accountRepository;
+//
+//    @Autowired
+//    public AccountCommandLineRunner(AccountRepository accountRepository) {
+//        this.accountRepository = accountRepository;
+//    }
 
     @Override
     public void run(String... args) throws Exception {
-        // save a couple of customers
+       /* // save a couple of customers
         accountRepository.save(new Account("Jack", "Bauer"));
         accountRepository.save(new Account("Chloe", "O'Brian"));
         accountRepository.save(new Account("Kim", "Bauer"));
@@ -42,6 +42,6 @@ public class AccountCommandLineRunner implements CommandLineRunner {
         log.info("Customer found with findOne(1L):");
         log.info("--------------------------------");
         log.info(optionalAccount.orElseThrow(() -> new RuntimeException("didn't find " + optionalAccount.toString())).toString());
-        log.info("");
+        log.info(""); */
     }
 }
