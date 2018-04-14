@@ -1,4 +1,4 @@
-package care.humancare.domain.account;
+package care.humancare.infrastructure.persistence;
 
 import care.humancare.domain.account.entity.Account;
 import org.springframework.data.repository.CrudRepository;

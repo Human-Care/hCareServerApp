@@ -1,6 +1,7 @@
 package care.humancare.domain.account;
 
 import care.humancare.domain.account.entity.Account;
+import care.humancare.infrastructure.persistence.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

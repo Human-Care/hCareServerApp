@@ -1,13 +1,8 @@
 package care.humancare.config.account;
 
-import care.humancare.domain.account.AccountRepository;
-import care.humancare.domain.account.entity.Account;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.Optional;
 
 @Slf4j
 @Configuration
