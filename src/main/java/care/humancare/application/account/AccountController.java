@@ -33,17 +33,17 @@ public class AccountController {
         return accountService.getAccount(id);
     }
 
-    @GetMapping("/")
+    @GetMapping("/all_accounts")
     public Iterable<Account> getAllAccounts() {
         return accountService.getAllAccounts();
     }
 
-    @PostMapping("/")
+    @PostMapping("/save")
     public Account saveAccount(@RequestBody Account account) {
         return accountService.saveAccount(account);
     }
 
-    @PutMapping("/")
+    @PutMapping("/update")
     public Account updateAccount(@RequestBody Account account) {
         return accountService.updateAccount(account);
     }
