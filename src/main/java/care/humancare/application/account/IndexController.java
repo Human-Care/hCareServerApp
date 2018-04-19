@@ -1,20 +1,16 @@
 package care.humancare.application.account;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.View;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Controller
+@RequestMapping("/index")
+@Api(description = "Controller which provides front-end pages")
 public class IndexController {
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @ApiOperation(value = "Get index page", response = String.class)
     public String index(){
 //        Map<String, String> model = new HashMap<>();
 //        model.put("name", "a");
