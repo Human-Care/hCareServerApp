@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-btn variant="warning" class="btn btn-warning btn-lg-nav-reg" @click="show=true">Регистрация</b-btn>
-    <b-modal v-model="show"
+    <b-modal centered v-model="show"
              title="Modal Variants"
              :header-bg-variant="headerBgVariant"
              :header-text-variant="headerTextVariant"
