@@ -17,8 +17,8 @@ public class Nails {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
 
-    @ManyToMany(mappedBy="nails")
-    private Set<Account> accounts = new HashSet<>();
+//    @ManyToMany(mappedBy="nails")
+//    private Set<Account> accounts = new HashSet<>();
 
     @Column
     private Integer free;

@@ -35,12 +35,10 @@
 
 <script>
 
-  import TestButton from '../registration/TestButton'
   import Modal from '../registration/Modal'
 
   export default {
     components: {
-      TestButton,
       Modal
     }
   }

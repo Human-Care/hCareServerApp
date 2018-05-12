@@ -24,9 +24,29 @@ public class Account extends CreateUpdateEntityField {
     @Column
     private String surname;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "account_nails",
-            joinColumns = { @JoinColumn(name = "account_Id")},
-            inverseJoinColumns = { @JoinColumn(name = "nails_id")})
-    private List<Nails> nails = new ArrayList<>();
+    @Column
+    private String email;
+
+    @Column
+    private String phoneNumber;
+
+    @Column
+    private String password;
+
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name = "account_nails",
+//            joinColumns = { @JoinColumn(name = "account_Id")},
+//            inverseJoinColumns = { @JoinColumn(name = "nails_id")})
+//    private List<Nails> nails = new ArrayList<>();
+
+    public Account(){
+    }
+
+    public Account(String name, String surname, String email, String phoneNumber, String pass) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = pass;
+    }
 }
